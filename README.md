@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ecogensus Website
 
-## Getting Started
+Advanced Materials Science & Technology Platform. Built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What to Add
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Logo
+- Add your Ecogensus logo to `public/logo.svg` or `public/logo.png`
+- Update the hero section in `src/app/page.tsx` to use: `<Image src="/logo.svg" alt="Ecogensus" ... />`
 
-## Learn More
+### OG Image (for social sharing)
+- Add `public/og-image.png` (1200×630px recommended) for professional appearance when shared on LinkedIn, Twitter, etc.
 
-To learn more about Next.js, take a look at the following resources:
+### Validation Logos
+- Add company logos to `public/images/validation/` (e.g., uniper.png, cargill.png)
+- Update Section C in `src/app/page.tsx` to render them
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### What We Do Video
+- Add your looping video to `public/what-we-do.mp4` (MP4, H.264 recommended)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Founder Photo
+- Add `public/founder.jpg` and update Section F in `src/app/page.tsx`
 
-## Deploy on Vercel
+### White Paper PDF
+- Add the foundational paper to `public/documents/constructive-thermochemistry.pdf`
+- Update the link in `src/app/library/page.tsx` and `src/app/page.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Email Capture
+- Connect your email service (Mailchimp, ConvertKit) in `src/components/EmailCapture.tsx`
+- Or add an API route at `src/app/api/subscribe/route.ts`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Environment
+- Set `NEXT_PUBLIC_SITE_URL` for production (e.g., `https://ecogensus.com`) for correct OG URLs
+
+## Build
+
+```bash
+npm run build
+npm start
+```
+
+## Structure
+
+- **/** — Home (single-scroll landing)
+- **/technology** — DOR process, Rhino platform, output streams
+- **/rhino-mining** — US platform strategy, Lone Star, investment
+- **/library** — White papers and resources
