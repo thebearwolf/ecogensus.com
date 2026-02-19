@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export const metadata = {
   title: "The Science of Surface Carbon | Ecogensus",
   description:
@@ -101,17 +99,6 @@ export default function TechnologyPage() {
               </p>
             </div>
           </div>
-        </section>
-
-        {/* White Paper Link */}
-        <section className="mt-24">
-          <Link
-            href="/library"
-            className="inline-flex items-center gap-2 text-lg text-blue-400 hover:text-blue-300 hover:underline"
-          >
-            Read the foundational paper: <em>Constructive Thermochemistry: A New Paradigm for Carbonaceous Material Conversion</em>
-            <span aria-hidden>→</span>
-          </Link>
         </section>
       </div>
     </main>

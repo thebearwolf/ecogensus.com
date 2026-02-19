@@ -83,13 +83,6 @@ export default function Home() {
                 Every output is a market.
               </p>
             </div>
-            <Link
-              href="/library#paper-1"
-              className="mt-8 inline-flex items-center gap-2 text-lg text-blue-400 hover:text-blue-300 hover:underline"
-            >
-              Read the foundational paper: <em>Constructive Thermochemistry: A New Paradigm for Carbonaceous Material Conversion</em>
-              <span aria-hidden>→</span>
-            </Link>
           </div>
           <div className="shrink-0 lg:w-[420px]">
             <div className="aspect-video overflow-hidden rounded-lg bg-zinc-900">
